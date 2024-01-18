@@ -1,0 +1,228 @@
+/* Geral */
+* {
+    padding: 0 ;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=1920&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpbmVtYXxlbnwwfDB8MHx8fDA%3D");
+
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+
+
+/* Header */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Form */
+#title-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#title-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#form-control {
+    display: flex;
+}
+
+#form-control input {
+    margin-right: 0.3rem;
+    width: 14rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* Toolbar */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/* Series list */
+.serie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.serie-info {
+    display: flex;
+}
+
+.serie h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.serie button {
+    margin-left: 0.4rem;
+}
+
+.hold {
+    background-color: rgb(238, 217, 30);
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+
+.episodes {
+    border: 2px solid #102f5e;
+    padding: 0.2rem;
+    height: 3.8rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.epis input {
+    width: 3.5rem;
+}
+
+.epis span {
+    font-weight: bold;
+}
+
+
+.epi-total {
+    height: 1.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+} 
+
+.add-season,
+.finish-serie {
+    margin-bottom: 0.2rem;
+}
+
+.exist-message {
+    padding: 2rem 1rem;
+    background-color: rgb(238, 217, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exist-message h2 {
+    margin-bottom: 1rem;
+}
+
+#close-message-btn {
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 567px) {
+    .serie {
+       flex-direction: column;
+    }
+
+    .serie h3 {
+    margin: 0.5rem;
+    }
+}

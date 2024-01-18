@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Séries</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Minhas Séries</h1>
+        </header>
+        <form id="title-form">
+            <p>Adicione a sua tarefa</p>
+            <div id="form-control">
+                <input type="text" id="title-input" placeholder="Qual o nome da série?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all" selected>Todos</option>
+                    <option value="tostart">Não iniciado</option>
+                    <option value="started">Iniciado</option>
+                    <option value="done">Concluido</option>
+                    <option value="hold">Em espera</option>
+                </select>
+            </div>
+        </div>
+        <div id="series-list">
+
+            <!-- <div class="serie">
+                <h3>Estou fazendo outra coisa...</h3>
+                <div class="serie-info">
+                <div class="episodes">
+                    <h4>T1</h4>
+                    <div class="epis">
+                        <input type="number" class="epi-atual">
+                        <span>/</span>
+                        <input type="number" class="epi-total">
+                    </div>
+                </div>
+                <div class="seasons">
+                    <button class="add-season">
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                    <button class="remove-season">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                </div>
+                <div class="conclusion">
+                    <button class="finish-serie">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="remove-serie">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="exist-message hide">
+            <h2>Esta série já existe.</h2>
+            <p>Procure por ela no "Pesquisar" para fazer a alteração desejada.</p>
+            <button id="close-message-btn">Voltar</button>
+        </div>
+    </div>
+</body>
+
+</html>
